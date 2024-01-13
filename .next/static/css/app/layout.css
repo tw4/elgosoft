@@ -1,0 +1,278 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Montserrat:wght@800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #131313;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2099b7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #61dafb;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Navbar/Navbar.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_navbarContainer__N_d5l {
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #131313;
+    z-index: 10;
+}
+
+.Navbar_navbarItemContainer__dVmni {
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.Navbar_navbarItemContainer__dVmni a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.Navbar_navbarItemContainer__dVmni a:hover {
+    color: #2099b7;
+}
+
+.Navbar_navbarLogo__aYitA {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.Navbar_navbarLogo__aYitA:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.Navbar_hamburgerMenu__vM5xY {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .Navbar_hamburgerMenu__vM5xY {
+        position: absolute;
+        right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Navbar_hamburgerMenuActive__qGpDn {
+        position: absolute;
+        right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Navbar_hamburgerMenu__vM5xY:hover {
+        cursor: pointer;
+    }
+
+    .Navbar_hamburgerMenuActive__qGpDn:hover {
+        cursor: pointer;
+    }
+
+    .Navbar_hamburgerLine__I6dHY {
+        transition: all 0.5s ease;
+    }
+
+    .Navbar_hamburgerLine__I6dHY:nth-child(1) {
+        text-decoration: none;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+
+    .Navbar_hamburgerLine__I6dHY:nth-child(2) {
+        text-decoration: none;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 10px;
+    }
+
+    .Navbar_hamburgerLine__I6dHY:nth-child(3) {
+        text-decoration: none;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+
+
+    .Navbar_hamburgerMenuActive__qGpDn .Navbar_hamburgerLine__I6dHY:nth-child(1) {
+        margin: 0;
+        transform: rotate(45deg);
+    }
+
+    .Navbar_hamburgerMenuActive__qGpDn .Navbar_hamburgerLine__I6dHY:nth-child(2) {
+        opacity: 0;
+    }
+
+    .Navbar_hamburgerMenuActive__qGpDn .Navbar_hamburgerLine__I6dHY:nth-child(3) {
+        margin: 0;
+        transform: rotate(-45deg);
+        background-color: #61dafb;
+    }
+
+    .Navbar_navbarContainer__N_d5l {
+        position: relative;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .Navbar_navbarItemContainer__dVmni {
+        display: none;
+    }
+
+    .Navbar_navbarItemContainerActive__4dyvf {
+        width: 100%;
+        justify-content: end;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .Navbar_navbarItemContainerActive__4dyvf a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+    }
+
+    .Navbar_navbarItemContainerActive__4dyvf a:hover {
+        color: #2099b7;
+    }
+
+    .Navbar_navbarContainer__N_d5l ul a {
+        margin: 10px 0;
+    }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic-ext */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/ec159349637c90ad-s.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/513657b02c5c193f-s.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/fd4db3eb5472fc27-s.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/51ed15f9841b9f9d-s.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/05a31a2ca4975f99-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/d6b16ce4a6175f26-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Inter_e66fe9';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Inter_Fallback_e66fe9';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
+}.__className_e66fe9 {font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';font-style: normal
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/layout.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+
+.layout_mainLayout__oCaA_ {
+}
+
+.layout_mainLayoutBody__wfTCE {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./app/components/Footer/Footer.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__YgQC9 {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}

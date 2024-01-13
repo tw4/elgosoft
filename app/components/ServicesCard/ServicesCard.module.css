@@ -1,0 +1,23 @@
+.servicesCard {
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.servicesCard img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.servicesCard h3 {
+    margin-top: 1rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.servicesCard p {
+    margin-top: 1rem
+}
+

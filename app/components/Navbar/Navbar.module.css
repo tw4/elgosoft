@@ -1,0 +1,148 @@
+.navbarContainer {
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #131313;
+    z-index: 10;
+}
+
+.navbarItemContainer {
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbarItemContainer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.navbarItemContainer a:hover {
+    color: #2099b7;
+}
+
+.navbarLogo {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.navbarLogo:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .hamburgerMenu {
+        position: absolute;
+        right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburgerMenuActive {
+        position: absolute;
+        right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburgerMenu:hover {
+        cursor: pointer;
+    }
+
+    .hamburgerMenuActive:hover {
+        cursor: pointer;
+    }
+
+    .hamburgerLine {
+        transition: all 0.5s ease;
+    }
+
+    .hamburgerLine:nth-child(1) {
+        text-decoration: none;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+    }
+
+    .hamburgerLine:nth-child(2) {
+        text-decoration: none;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 10px;
+    }
+
+    .hamburgerLine:nth-child(3) {
+        text-decoration: none;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+
+
+    .hamburgerMenuActive .hamburgerLine:nth-child(1) {
+        margin: 0;
+        transform: rotate(45deg);
+    }
+
+    .hamburgerMenuActive .hamburgerLine:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerMenuActive .hamburgerLine:nth-child(3) {
+        margin: 0;
+        transform: rotate(-45deg);
+        background-color: #61dafb;
+    }
+
+    .navbarContainer {
+        position: relative;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .navbarItemContainer {
+        display: none;
+    }
+
+    .navbarItemContainerActive {
+        width: 100%;
+        justify-content: end;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .navbarItemContainerActive a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+    }
+
+    .navbarItemContainerActive a:hover {
+        color: #2099b7;
+    }
+
+    .navbarContainer ul a {
+        margin: 10px 0;
+    }
+}
