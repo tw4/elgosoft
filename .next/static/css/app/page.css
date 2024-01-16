@@ -59,6 +59,7 @@
 }
 
 .page_homeH1__YkiKP {
+  width: 50%;
   position: relative;
   font-size: 4.5rem;
   font-weight: 700;
@@ -355,6 +356,11 @@
     flex-direction: column;
   }
 
+  .page_homeAboutContainer__odjaB iframe {
+    width: 100%;
+    height: 400px;
+  }
+
   .page_homeAboutH2__qzy8H {
     font-size: 1rem;
   }
@@ -403,6 +409,17 @@
     margin-top: 2em;
     width: 100%;
     height: 400px;
+  }
+
+  .page_homeAboutContainer__odjaB iframe {
+    width: 100%;
+    height:100%
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .page_homeH1__YkiKP{
+    width: 100%;
   }
 }
 

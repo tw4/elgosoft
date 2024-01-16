@@ -17,7 +17,7 @@ const Home = () => {
         />
       </div>
       <h1 className={styles.homeH1}>
-        Dijital Dünyada Adınızı Elgosoft İle Yazın
+          DİJİTAL DÜNYADA ADINIZI ELGOSOFT İLE YAZIN
       </h1>
       <a href="#contact">
         <button className={styles.homeBtn}>Bizimle iletişime geçin</button>
@@ -57,7 +57,7 @@ const Home = () => {
       </div>
 
       <div className={styles.homeAboutContainer}>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/FiP8TPuF-kw?si=LAX0VPc-wURw9DuH"
+          <iframe  width='50%' height='400px' src="https://www.youtube.com/embed/FiP8TPuF-kw?si=LAX0VPc-wURw9DuH"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>

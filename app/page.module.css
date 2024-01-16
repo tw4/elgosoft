@@ -11,6 +11,7 @@
 }
 
 .homeH1 {
+  width: 50%;
   position: relative;
   font-size: 4.5rem;
   font-weight: 700;
@@ -307,6 +308,11 @@
     flex-direction: column;
   }
 
+  .homeAboutContainer iframe {
+    width: 100%;
+    height: 400px;
+  }
+
   .homeAboutH2 {
     font-size: 1rem;
   }
@@ -355,5 +361,16 @@
     margin-top: 2em;
     width: 100%;
     height: 400px;
+  }
+
+  .homeAboutContainer iframe {
+    width: 100%;
+    height:100%
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .homeH1{
+    width: 100%;
   }
 }
