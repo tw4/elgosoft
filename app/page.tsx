@@ -26,22 +26,22 @@ const Home = () => {
         <ServicesCard
           title="Web Tasarım"
           description="Yaratıcı Çözümler, Elgosoft'un İmzasıdır."
-          image="/assets/web-design-icon.png"
+          image="/assets/web-design.png"
         />
         <ServicesCard
           title="Mobil Uygulama"
           description="Mobilde Öne Çıkın, Elgosoft İle Başarıya Adım Atın."
-          image="/assets/web-design-icon.png"
+          image="/assets/mobile-development.png"
         />
         <ServicesCard
           title="IT Destek"
           description="Verimliliği Artırın, IT Danışmanlığında Güvende Olun."
-          image="/assets/web-design-icon.png"
+          image="/assets/technical-support.png"
         />
         <ServicesCard
           title="ME/MII Destek"
           description="Verimliliği Artırın, IT Danışmanlığında Güvende Olun."
-          image="/assets/web-design-icon.png"
+          image="/assets/sap.png"
         />
       </div>
 
@@ -57,35 +57,43 @@ const Home = () => {
       </div>
 
       <div className={styles.homeAboutContainer}>
-        <img src="/assets/home-about.svg" alt="home-about-svg" />
-        <div id="about">
-          <h3 className={styles.homeAboutH3}>HAKKIMIZDA</h3>
-          <h2 className={styles.homeAboutH2}>
-            Vizyonumuz Teknolojik gelişmeleri takip ederek, müşterilerimize
-            yenilikç…
-          </h2>
-          <p>
-            Biz Elgosoft, 2024 yılında kurulmuş bir yazılım şirketiyiz. İleri
-            teknolojiye olan tutkumuz, inovasyon ve uzmanlıkla birleşerek
-            müşterilerimize sektörde öncü hizmetler sunma amacımızı
-            yönlendiriyor.
-          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FiP8TPuF-kw?si=LAX0VPc-wURw9DuH"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  ></iframe>
+          <div id="about">
+              <h3 className={styles.homeAboutH3}>HAKKIMIZDA</h3>
+              <p>
+                  Biz Elgosoft, 2024 yılında kurulmuş bir yazılım şirketiyiz. İleri teknolojiye olan tutkumuz, inovasyon ve uzmanlıkla birleşerek müşterilerimize sektörde öncü hizmetler sunma amacımızı yönlendiriyor.
+              </p>
+              <h2 className={styles.homeAboutH2}>
+                  Vizyonumuz
+              </h2>
+              <p>
+                  eknolojik gelişmeleri takip ederek, müşterilerimize yenilikçi ve en son teknoloji çözümler sunmak; iş süreçlerini optimize etmek ve sürdürülebilir başarıya katkıda bulunmak.
+              </p>
+                <h2 className={styles.homeAboutH2}>
+                    Misyonumuz
+                </h2>
+              <p>
+                  Müşteri memnuniyetini odak noktamız yaparak, web tasarımından mobil uygulama geliştirmeye, IT danışmanlığından endüstriyel otomasyona kadar geniş bir yelpazede hizmetler sunarak iş dünyasının ihtiyaçlarına çözümler üretmek.
+              </p>
+          </div>
+      </div>
+
+        <div className={styles.homeReferenceContainer}>
+            <img src="/assets/logo.png" alt="logo"/>
+            <img src="/assets/logo.png" alt="logo"/>
+            <img src="/assets/logo.png" alt="logo"/>
         </div>
-      </div>
 
-      <div className={styles.homeReferenceContainer}>
-        <img src="/assets/logo.png" alt="logo" />
-        <img src="/assets/logo.png" alt="logo" />
-        <img src="/assets/logo.png" alt="logo" />
-      </div>
-
-      <div id="experiences" className={styles.homeProjectGallery}>
+        <div id="experiences" className={styles.homeProjectGallery}>
         <h3>PROJE GALERİSİ</h3>
         <h1>Dijital Bakış</h1>
         <div className={styles.homeProjectGalleryGrid}>
           <img src="/assets/project-1.png" alt="project-1" />
-          <img src="/assets/project-1.png" alt="project-1" />
-          <img src="/assets/project-1.png" alt="project-1" />
+          <img src="/assets/project-2.png" alt="project-1" />
+          <img src="/assets/project-3.png" alt="project-1" />
         </div>
       </div>
 

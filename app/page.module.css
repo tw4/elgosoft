@@ -139,6 +139,7 @@
 .homeAboutContainer {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 10.5em;
   animation: homeStarter 1s ease-in-out;
 }

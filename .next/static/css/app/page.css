@@ -187,6 +187,7 @@
 .page_homeAboutContainer__odjaB {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 10.5em;
   animation: page_homeStarter__3RgLp 1s ease-in-out;
 }
