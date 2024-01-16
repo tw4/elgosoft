@@ -22,7 +22,9 @@ const Home = () => {
       <a href="#contact">
         <button className={styles.homeBtn}>Bizimle iletişime geçin</button>
       </a>
-      <div id="services" className={styles.servicesCardContainer}>
+        <div id='services'>
+        </div>
+      <div  className={styles.servicesCardContainer}>
         <ServicesCard
           title="Web Tasarım"
           description="Yaratıcı Çözümler, Elgosoft'un İmzasıdır."
@@ -56,12 +58,13 @@ const Home = () => {
         <ExperiencesCard value="%99" description="Memnuniyet" />
       </div>
 
+        <div id='about'></div>
       <div className={styles.homeAboutContainer}>
           <iframe  width='50%' height='400px' src="https://www.youtube.com/embed/FiP8TPuF-kw?si=LAX0VPc-wURw9DuH"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
-          <div id="about">
+          <div>
               <h3 className={styles.homeAboutH3}>HAKKIMIZDA</h3>
               <p>
                   Biz Elgosoft, 2024 yılında kurulmuş bir yazılım şirketiyiz. İleri teknolojiye olan tutkumuz, inovasyon ve uzmanlıkla birleşerek müşterilerimize sektörde öncü hizmetler sunma amacımızı yönlendiriyor.
@@ -87,7 +90,8 @@ const Home = () => {
             <img src="/assets/logo.png" alt="logo"/>
         </div>
 
-        <div id="experiences" className={styles.homeProjectGallery}>
+        <div id="experiences"></div>
+        <div className={styles.homeProjectGallery}>
         <h3>PROJE GALERİSİ</h3>
         <h1>Dijital Bakış</h1>
         <div className={styles.homeProjectGalleryGrid}>
@@ -96,8 +100,8 @@ const Home = () => {
           <img src="/assets/project-3.png" alt="project-1" />
         </div>
       </div>
-
-      <div id="contact" className={styles.homeContact}>
+        <div id="contact"></div>
+      <div  className={styles.homeContact}>
         <h2>İletişim</h2>
         <div className={styles.homeContactForm}>
           <div>
