@@ -51,9 +51,9 @@ const Home = () => {
       <p className="homeP">Geleceği Elde Edin, İnovasyonla Yönlendirin</p>
 
       <div className={styles.homeExperienceContainer}>
-        <ExperiencesCard value="52 K+" description="Projects Completed" />
-        <ExperiencesCard value="52 K+" description="Projects Completed" />
-        <ExperiencesCard value="52 K+" description="Projects Completed" />
+        <ExperiencesCard value="99+" description="Tamamlaman Proje" />
+        <ExperiencesCard value="50+" description="Müşteri" />
+        <ExperiencesCard value="%99" description="Memnuniyet" />
       </div>
 
       <div className={styles.homeAboutContainer}>
