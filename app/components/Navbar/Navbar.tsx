@@ -16,7 +16,7 @@ export const Navbar = () => {
                 <img
                     className={styles.navbarLogo}
                     src="/assets/logo.png"
-                    width={100}
+                    width={150}
                     alt="logo"
                 />
             </a>
