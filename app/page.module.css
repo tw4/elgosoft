@@ -274,6 +274,10 @@
   width: 50%;
 }
 
+.homeContactForm div img {
+  margin-bottom: 2em;
+}
+
 .homeContactForm iframe {
   width: 600px;
   height: 400px;

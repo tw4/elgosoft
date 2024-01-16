@@ -93,7 +93,7 @@ const Home = () => {
         <h2>İletişim</h2>
         <div className={styles.homeContactForm}>
           <div>
-            <img src="/assets/logo.png" height={300} width={350} alt="logo" />
+            <img src="/assets/logo.png" width={200} alt="logo" />
             <p>✉️ e-mail: info@elgosoft.com</p>
             <p>📞 tel: +90 123 456 78 90</p>
             <p>📍 adres: İstanbul</p>
