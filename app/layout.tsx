@@ -1,31 +1,24 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import styles from './layout.module.css'
-import { Footer } from './components/Footer/Footer'
-import { Navbar } from './components/Navbar/Navbar'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ElgoSoft - Digital Agency',
-  description: 'Elgosoft is a digital agency that helps companies to grow their business by providing them with the best software solutions.',
-}
+  title:
+    'Elgosoft | Web Tasarım, Mobil Uygulama ve IT Hizmetleri - İleri Düzey Çözümler',
+  description:
+    'lgosoft ile dijital dünyada öne çıkın. Web tasarım, mobil uygulama ve IT hizmetlerinde uzman çözümler. Hemen iletişime geçin!',
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <main className={styles.mainLayout}>
-        <Navbar/>
-        <div className={styles.mainLayoutBody}>{children}</div>
-        <Footer />
-      </main>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }
