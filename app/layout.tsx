@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     'Elgosoft | Web Tasarım, Mobil Uygulama ve IT Hizmetleri - İleri Düzey Çözümler',
   description:
-    'lgosoft ile dijital dünyada öne çıkın. Web tasarım, mobil uygulama ve IT hizmetlerinde uzman çözümler. Hemen iletişime geçin!',
+    'Elgosoft ile dijital dünyada öne çıkın. Web tasarım, mobil uygulama ve IT hizmetlerinde uzman çözümler. Hemen iletişime geçin!',
 };
 
 export default function RootLayout({
