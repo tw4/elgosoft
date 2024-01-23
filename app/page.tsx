@@ -1,6 +1,7 @@
-import { MainSectionLayout } from '@/app/layouts/MainSectionLayout';
-import { Navbar } from '@/app/components/Navbar';
-import { FaqCard } from '@/app/components/FaqCard';
+import { MainSectionLayout } from "@/app/layouts/MainSectionLayout";
+import { Navbar } from "@/app/components/Navbar";
+import { FaqCard } from "@/app/components/FaqCard";
+import { HomePageStepCard } from "@/app/components/HomePageStepCard";
 
 const Home = () => {
   return (
@@ -40,7 +41,7 @@ const Home = () => {
         </div>
       </MainSectionLayout>
       <MainSectionLayout className="bg-[#292526]">
-        <h2 className="text-white text-4xl text-center mt-20 pb-20">
+        <h2 className="text-white text-4xl text-center pt-10 pb-20">
           Müşterilerimize sunduğumuz yazılım çözümleri sayesinde işletmelerin
           daha hızlı büyümesini sağlıyoruz.
         </h2>
@@ -53,8 +54,8 @@ const Home = () => {
       </MainSectionLayout>
       <MainSectionLayout id="about" className="bg-[#F6F6F6]">
         <h2 className="text-5xl mt-20 font-bold text-center sm:text-3xl">
-          Girişiminizin <span className="text-blue-500"> başarılı </span>{' '}
-          olmasına yardımcı olmak için burada olan{' '}
+          Girişiminizin <span className="text-blue-500"> başarılı </span>{" "}
+          olmasına yardımcı olmak için burada olan{" "}
           <span className="text-blue-500"> tutkulu </span> ve
           <span className="text-blue-500"> meraklı </span> bir ekip
         </h2>
@@ -63,9 +64,13 @@ const Home = () => {
           kullanıcı odaklı tasarımlar ve inovatif yazılım çözümleriyle projenizi
           üst düzeye taşıyor. Başarınız bizim önceliğimiz.
         </p>
-        <div className="flex flex-row justify-center items-center space-x-3 mt-20 sm:flex-col">
+        <div className="flex flex-row justify-center items-center space-x-3 mt-20 sm:flex-col sm:space-y-5">
           <div className="text-center space-y-3">
-            <img className="m-auto" src="/assets/icon-1.svg" alt="icon" />
+            <img
+              className="m-auto h-[130px]"
+              src="/assets/icon-1.svg"
+              alt="icon"
+            />
             <h3 className="font-bold text-2xl">Maksimum Müşteri Memnuniyeti</h3>
             <p>
               %99 Müşteri Memnuniyeti: Başarıya giden yolda sizinle bir adım öne
@@ -73,7 +78,11 @@ const Home = () => {
             </p>
           </div>
           <div className="text-center space-y-3">
-            <img className="m-auto" src="/assets/icon-2.svg" alt="icon" />
+            <img
+              className="m-auto h-[130px]"
+              src="/assets/icon-2.svg"
+              alt="icon"
+            />
             <h3 className="font-bold text-2xl">Yenilikçi Ekip</h3>
             <p>
               Yenilikçi Ekip: Problemleri çözmek ve başarıya ulaşmak için
@@ -81,7 +90,11 @@ const Home = () => {
             </p>
           </div>
           <div className="text-center space-y-3">
-            <img className="m-auto" src="/assets/icon-3.svg" alt="icon" />
+            <img
+              className="m-auto h-[130px]"
+              src="/assets/icon-3.svg"
+              alt="icon"
+            />
             <h3 className="font-bold text-2xl">Sürekli Destek</h3>
             <p>
               Sürekli Destek: İhtiyaçlarınıza anında çözüm sunan bir ekibin
@@ -106,44 +119,34 @@ const Home = () => {
             katkıda bulunur.
           </p>
         </div>
-        <div className="flex flex-row justify-center items-center space-x-3 mt-20 mb-20 sm:flex-col">
-          <div className="text-center space-y-3">
-            <img className="m-auto" src="/assets/01-icon.svg" alt="icon" />
-            <h5 className="text-2xl font-bold text-blue-500">
-              Müşteri ihtiyaç ve hedeflerinin belirlenmesi.
-            </h5>
-            <img className="m-auto" src="/assets/peaple-01.svg" alt="icon" />
-            <p>
-              Elgosoft, projenin temelini oluşturan ilk adımda müşteriyle yakın
+        <div className="flex flex-row justify-between items-center mt-20 pb-20 sm:flex-col sm:space-y-5">
+          <HomePageStepCard
+            stepIconUrl="/assets/01-icon.svg"
+            stepTitle="Müşteri ihtiyaç ve hedeflerinin belirlenmesi"
+            stepImageUrl="/assets/peaple-01.svg"
+            stepDescription=" Elgosoft, projenin temelini oluşturan ilk adımda müşteriyle yakın
               bir işbirliği kurar. Profesyonel analistlerimiz, müşterinin
-              beklentilerini anlamak için kapsamlı bir ihtiyaç analizi yapar.
-            </p>
-          </div>
-          <div className="text-center space-y-3">
-            <img className="m-auto" src="/assets/02-icon.svg" alt="icon" />
-            <h5 className="text-2xl font-bold text-blue-500">
-              Özelleştirilmiş çözüm geliştirme
-            </h5>
-            <img className="m-auto" src="/assets/peaple-02.svg" alt="icon" />
-            <p>
-              Belirlenen müşteri ihtiyaçlarına dayalı olarak Elgosoft, özgün ve
+              beklentilerini anlamak için kapsamlı bir ihtiyaç analizi yapar."
+          />
+
+          <HomePageStepCard
+            stepIconUrl="/assets/02-icon.svg"
+            stepTitle="Özelleştirilmiş çözüm geliştirme"
+            stepImageUrl="/assets/peaple-02.svg"
+            stepDescription="Belirlenen müşteri ihtiyaçlarına dayalı olarak Elgosoft, özgün ve
               etkili çözümler geliştirme sürecine geçer. Profesyonel yazılım
-              geliştirme ekibimiz, modern web tasarımı.
-            </p>
-          </div>
-          <div className="text-center space-y-3">
-            <img className="m-auto" src="/assets/03-icon.svg" alt="icon" />
-            <h5 className="text-2xl font-bold text-blue-500">
-              Elgosoft ile sürekli iyileştirme ve destek.
-            </h5>
-            <img className="m-auto" src="/assets/peaple-03.svg" alt="icon" />
-            <p>
-              Proje tamamlandığında Elgosoft, müşterisine sadece bir çözüm
+              geliştirme ekibimiz, modern web tasarımı."
+          />
+
+          <HomePageStepCard
+            stepIconUrl="/assets/03-icon.svg"
+            stepTitle="Elgosoft ile sürekli iyileştirme ve destek."
+            stepImageUrl="/assets/peaple-03.svg"
+            stepDescription="Proje tamamlandığında Elgosoft, müşterisine sadece bir çözüm
               sağlamakla kalmaz, aynı zamanda sürekli destek ve iyileştirme
               hizmeti sunar. Müşteri geri bildirimleri ve pazar dinamikleri
-              doğrultusunda.
-            </p>
-          </div>
+              doğrultusunda."
+          />
         </div>
       </MainSectionLayout>
       <MainSectionLayout id="work" className="bg-[#292526] text-white">
@@ -182,7 +185,7 @@ const Home = () => {
       </MainSectionLayout>
       <MainSectionLayout id="faq" className="bg-[#F6F6F6]">
         <div className="space-y-3">
-          <h2 className="text-center font-bold text-3xl mt-20">
+          <h2 className="text-center font-bold text-3xl pt-20">
             <span className="text-blue-500">Sık</span> sorulan sorularımız
           </h2>
           <div>
@@ -208,8 +211,8 @@ const Home = () => {
             />
           </div>
           <h2 className="text-4xl text-center font-bold pt-20">
-            Birlikte <span className="text-blue-500"> muhteşem </span> bir gelecek
-            inşa edelim!
+            Birlikte <span className="text-blue-500"> muhteşem </span> bir
+            gelecek inşa edelim!
           </h2>
           <p className="text-center">
             Sizlere 7 gün 24 saat boyunca ulaşabiliriz. Müşteri memnuniyeti
