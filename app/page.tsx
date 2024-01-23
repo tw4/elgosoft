@@ -17,15 +17,15 @@ const Home = () => {
         <div className="flex flex-row justify-evenly pt-12 font-bold  space-x-3 sm:flex-col sm:justify-center sm:items-ce sm:space-x-0">
           <div className="flex  flex-row space-x-3 items-center">
             <img className="w-5 h-5" src="/assets/checked.png" alt="checked" />
-            <p>Ekip Kurma Sıkıntısına Son</p>
+            <p>Ekip kurma sıkıntısına son</p>
           </div>
           <div className="flex flex-row space-x-3 items-center">
             <img className="w-5 h-5" src="/assets/checked.png" alt="checked" />
-            <p>Müşteri Odaklı İletişim</p>
+            <p>Müşteri odaklı iletişim</p>
           </div>
           <div className="flex flex-row space-x-3 items-center">
             <img className="w-5 h-5" src="/assets/checked.png" alt="checked" />
-            <p>Zamanında Teslim</p>
+            <p>Zamanında teslim</p>
           </div>
         </div>
         <div className="text-center pt-12">
@@ -91,7 +91,7 @@ const Home = () => {
         </div>
         <div className="mt-20 text-center">
           <h2 className="text-4xl font-bold">
-            Biz <span className="text-blue-500"> Elgosoft'ta </span> nasıl
+            <span className="text-blue-500"> Elgosoft'ta </span> nasıl
             çalışıyoruz ?
           </h2>
 
@@ -134,7 +134,7 @@ const Home = () => {
           <div className="text-center space-y-3">
             <img className="m-auto" src="/assets/03-icon.svg" alt="icon" />
             <h5 className="text-2xl font-bold text-blue-500">
-              ElgoSoft ile sürekli iyileştirme ve destek.
+              Elgosoft ile sürekli iyileştirme ve destek.
             </h5>
             <img className="m-auto" src="/assets/peaple-03.svg" alt="icon" />
             <p>
@@ -183,7 +183,7 @@ const Home = () => {
       <MainSectionLayout id="faq" className="bg-[#F6F6F6]">
         <div className="space-y-3">
           <h2 className="text-center font-bold text-3xl mt-20">
-            En <span className="text-blue-500">sık</span> sorulan sorularımız
+            <span className="text-blue-500">Sık</span> sorulan sorularımız
           </h2>
           <div>
             <FaqCard
@@ -208,7 +208,7 @@ const Home = () => {
             />
           </div>
           <h2 className="text-4xl text-center font-bold pt-20">
-            Birlikte <span className="text-blue-500"> muhteşem </span> bir şey
+            Birlikte <span className="text-blue-500"> muhteşem </span> bir gelecek
             inşa edelim!
           </h2>
           <p className="text-center">
