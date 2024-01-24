@@ -160,7 +160,7 @@ const Home = () => {
           <span className="text-blue-500">UI/UX</span> tasarımları işletmeleri
           nasıl <span className="text-blue-500"> zirveye </span> taşıyor?
         </h2>
-        <div className="mt-10 space-y-5">
+        <div className="mt-10 space-y-5 pb-32">
           <img className="m-auto" src="/assets/banner-01.svg" alt="banner" />
           <img className="m-auto" src="/assets/banner-02.svg" alt="banner" />
           <img className="m-auto" src="/assets/banner-03.svg" alt="banner" />
@@ -181,14 +181,14 @@ const Home = () => {
         {/*        <p className="text-center">VP of Product at Socure</p>*/}
         {/*      </div>*/}
         {/*    </div>*/}
-            <button
-              className="bg-gray-500 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 mt-10 mb-20"
-              disabled
-            >
-              örnek olay incelemelerimize bakın
-            </button>
-          </div>
-        </div>
+        {/*    <button*/}
+        {/*      className="bg-gray-500 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 mt-10 mb-20"*/}
+        {/*      disabled*/}
+        {/*    >*/}
+        {/*      örnek olay incelemelerimize bakın*/}
+        {/*    </button>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </MainSectionLayout>
       <MainSectionLayout id="faq" className="bg-[#F6F6F6]">
         <div className="space-y-3">
