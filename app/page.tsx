@@ -165,21 +165,22 @@ const Home = () => {
           <img className="m-auto" src="/assets/banner-02.svg" alt="banner" />
           <img className="m-auto" src="/assets/banner-03.svg" alt="banner" />
         </div>
-        <div className="mt-20">
-          <p className="text-xl pr-52 pl-52 xl:pr-40 xl:pl-40 md:pr-32 md:pl-32 sm:pr-16 sm:pl-16">
-            Elgosoft, ana sorunları belirleyip yeni bir kullanıcı deneyimi
-            tasarlayarak bizi memnun eden bir yaklaşım sergiledi. Yeniden
-            tasarım, bizi ileri taşımanın ötesine geçti, erişilebilir ve
-            anlaşılır bir deneyim sunarak olumlu bir etki yarattı.
-          </p>
-          <div className=" flex flex-col items-center text-center">
-            <div className="flex flex-row items-center mt-10">
-              <img src="/assets/avatar.svg" alt="avatar" />
-              <div className="flex flex-col pl-5">
-                <p className="text-blue-500 text-center">Mert Sabinov</p>
-                <p className="text-center">VP of Product at Socure</p>
-              </div>
-            </div>
+        {/* TODO: This area will be activated in the future */}
+        {/*<div className="mt-20">*/}
+        {/*  <p className="text-xl pr-52 pl-52 xl:pr-40 xl:pl-40 md:pr-32 md:pl-32 sm:pr-16 sm:pl-16">*/}
+        {/*    Elgosoft, ana sorunları belirleyip yeni bir kullanıcı deneyimi*/}
+        {/*    tasarlayarak bizi memnun eden bir yaklaşım sergiledi. Yeniden*/}
+        {/*    tasarım, bizi ileri taşımanın ötesine geçti, erişilebilir ve*/}
+        {/*    anlaşılır bir deneyim sunarak olumlu bir etki yarattı.*/}
+        {/*  </p>*/}
+        {/*  <div className=" flex flex-col items-center text-center">*/}
+        {/*    <div className="flex flex-row items-center mt-10">*/}
+        {/*      <img src="/assets/avatar.svg" alt="avatar" />*/}
+        {/*      <div className="flex flex-col pl-5">*/}
+        {/*        <p className="text-blue-500 text-center">Mert Sabinov</p>*/}
+        {/*        <p className="text-center">VP of Product at Socure</p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
             <button
               className="bg-gray-500 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 mt-10 mb-20"
               disabled
