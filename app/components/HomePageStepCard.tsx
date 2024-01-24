@@ -16,7 +16,9 @@ export const HomePageStepCard: FC<HomePageStepCardProps> = ({
   return (
     <div className="text-center space-y-3">
       <img className="m-auto" src={stepIconUrl} alt="icon" />
-      <h5 className="text-2xl font-bold text-blue-500">{stepTitle}</h5>
+      <h5 className="text-2xl font-bold text-blue-500  h-[130px]">
+        {stepTitle}
+      </h5>
       <img className="m-auto h-[137px]" src={stepImageUrl} alt="icon" />
       <p>{stepDescription}</p>
     </div>

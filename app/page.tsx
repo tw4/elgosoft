@@ -119,7 +119,7 @@ const Home = () => {
             katkıda bulunur.
           </p>
         </div>
-        <div className="flex flex-row justify-between items-center mt-20 pb-20 sm:flex-col sm:space-y-5">
+        <div className="grid grid-cols-3 gap-5 mt-20 pb-20 lg:grid-cols-2 sm:grid-cols-1">
           <HomePageStepCard
             stepIconUrl="/assets/01-icon.svg"
             stepTitle="Müşteri ihtiyaç ve hedeflerinin belirlenmesi"
