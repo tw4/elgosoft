@@ -59,19 +59,21 @@ const Home = () => {
           <span className="text-blue-500"> tutkulu </span> ve
           <span className="text-blue-500"> meraklı </span> bir ekip
         </h2>
-        <p className="pr-40 pl-40 text-center mt-5 md:pr-20 md:pl-20 sm:pr-10 sm:pl-10">
+        <p className="pr-40 pl-40 text-center mt-5 lg:pr-10 lg:pl-10 md:pr-20 md:pl-20 sm:pr-10 sm:pl-10">
           İşletmenizin başarısı için buradayız. Tutkulu ve meraklı ekibimiz,
           kullanıcı odaklı tasarımlar ve inovatif yazılım çözümleriyle projenizi
           üst düzeye taşıyor. Başarınız bizim önceliğimiz.
         </p>
-        <div className="flex flex-row justify-center items-center space-x-3 mt-20 sm:flex-col sm:space-y-5">
+        <div className="grid grid-cols-3 gap-5 mt-14 lg:grid-cols-2 sm:grid-cols-1">
           <div className="text-center space-y-3">
             <img
               className="m-auto h-[130px]"
               src="/assets/icon-1.svg"
               alt="icon"
             />
-            <h3 className="font-bold text-2xl">Maksimum Müşteri Memnuniyeti</h3>
+            <h3 className="font-bold text-2xl lg:h-14 lg:text-xl sm:h-fit ">
+              Maksimum Müşteri Memnuniyeti
+            </h3>
             <p>
               %99 Müşteri Memnuniyeti: Başarıya giden yolda sizinle bir adım öne
               geçiyoruz.
@@ -83,7 +85,9 @@ const Home = () => {
               src="/assets/icon-2.svg"
               alt="icon"
             />
-            <h3 className="font-bold text-2xl">Yenilikçi Ekip</h3>
+            <h3 className="font-bold text-2xl lg:h-14 lg:text-xl sm:h-fit">
+              Yenilikçi Ekip
+            </h3>
             <p>
               Yenilikçi Ekip: Problemleri çözmek ve başarıya ulaşmak için
               buradayız.
@@ -95,7 +99,9 @@ const Home = () => {
               src="/assets/icon-3.svg"
               alt="icon"
             />
-            <h3 className="font-bold text-2xl">Sürekli Destek</h3>
+            <h3 className="font-bold text-2xl lg:h-12 lg:text-xl sm:h-fit">
+              Sürekli Destek
+            </h3>
             <p>
               Sürekli Destek: İhtiyaçlarınıza anında çözüm sunan bir ekibin
               yanında olun.
