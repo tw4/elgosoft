@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { IoCloseSharp } from 'react-icons/io5';
+import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseSharp } from "react-icons/io5";
 
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
@@ -37,8 +37,7 @@ export const Navbar = () => {
             <li>
               <a
                 className="hover:text-blue-500"
-                href="https://blog.elgosoft.com/"
-              >
+                href="https://blog.elgosoft.com/">
                 Blog
               </a>
             </li>
@@ -48,10 +47,6 @@ export const Navbar = () => {
               </a>
             </li>
           </ul>
-
-          <button className="bg-blue-600 rounded-xl text-white pr-5 pl-5 pt-1 pb-1 sm:hidden">
-            Hadi Başlayalım
-          </button>
         </nav>
       </div>
 
@@ -59,8 +54,7 @@ export const Navbar = () => {
       <div className="hidden fixed bg-white bg-opacity-50 backdrop-blur-2xl w-full cursor-pointer sm:block">
         <div
           onClick={handleNavbar}
-          className="flex flex-row justify-between p-5"
-        >
+          className="flex flex-row justify-between p-5">
           <a href="#howitworks">
             <img className="w-24" src="/assets/logo.png" alt="logo" />
           </a>
@@ -91,8 +85,7 @@ export const Navbar = () => {
               <li>
                 <a
                   className="hover:text-blue-500"
-                  href="https://blog.elgosoft.com/"
-                >
+                  href="https://blog.elgosoft.com/">
                   Blog
                 </a>
               </li>
