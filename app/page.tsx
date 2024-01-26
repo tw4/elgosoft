@@ -30,9 +30,11 @@ const Home = () => {
           </div>
         </div>
         <div className="text-center pt-12">
-          <button className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2">
-            Hemen İletişime Geçin
-          </button>
+          <a
+            href="mailto:info@elgosoft.com?subject=İletişim%20Talebi&body=Merhaba,%20size%20ulaşmak%20istiyorum."
+            className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 hover:cursor-pointer">
+            Bizimle İletişime Geçin
+          </a>
           <img
             className="m-auto pt-10"
             src="/assets/home-header-img.svg"
@@ -224,9 +226,11 @@ const Home = () => {
             buradayız.
           </p>
           <div className="flex justify-center">
-            <button className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2">
+            <a
+              href="mailto:info@elgosoft.com?subject=İletişim%20Talebi&body=Merhaba,%20size%20ulaşmak%20istiyorum."
+              className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 hover:cursor-pointer">
               Bizimle İletişime Geçin
-            </button>
+            </a>
           </div>
           <img
             className="m-auto"
