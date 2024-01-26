@@ -198,11 +198,7 @@ const Home = () => {
           <div>
             <FaqCard
               question="Elgosoft'un temel hizmet alanları nelerdir?"
-              answer="Elgosoft, web tasarım, mobil tasarım ve IT hizmetleri konularında hangi hizmetleri sağlamaktadır."
-            />
-            <FaqCard
-              question="Elgosoft'un müşterilere sunduğu özel yazılım çözümleri nelerdir?"
-              answer="Elgosoft, web tasarım, mobil tasarım ve IT hizmetleri konularında hangi hizmetleri sağlamaktadır."
+              answer="Elgosoft, web tasarım, mobil tasarım ve IT hizmetleri sağlamaktadır."
             />
             <FaqCard
               question="Elgosoft'un önceki projelerinde elde ettiği başarı hikayeleri nelerdir?"
