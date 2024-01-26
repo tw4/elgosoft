@@ -222,9 +222,10 @@ const Home = () => {
             gelecek inşa edelim!
           </h2>
           <p className="text-center">
-            Sizlere 7 gün 24 saat boyunca ulaşabiliriz. Müşteri memnuniyeti
-            odaklı hizmetimizle, her an sorularınızı yanıtlamak ve
-            ihtiyaçlarınıza çözüm sunmak için buradayız.
+            Haftanın 5 günü 09:00 ile 17:00 saatleri arasında bize
+            ulaşabilirsiniz. Müşteri memnuniyeti odaklı hizmetimizle,
+            sorularınızı yanıtlamak ve ihtiyaçlarınıza çözüm sunmak için
+            buradayız.
           </p>
           <div className="flex justify-center">
             <button className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2">
