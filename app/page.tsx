@@ -32,11 +32,12 @@ const Home = () => {
         <div className="text-center pt-12">
           <a
             href="mailto:info@elgosoft.com?subject=İletişim%20Talebi&body=Merhaba,%20size%20ulaşmak%20istiyorum."
-            className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 hover:cursor-pointer">
+            className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 hover:cursor-pointer"
+          >
             Bizimle İletişime Geçin
           </a>
           <img
-            className="m-auto pt-10"
+            className="m-auto pt-10 h-[600px]"
             src="/assets/home-header-img.svg"
             alt="header-img"
           />
@@ -228,12 +229,13 @@ const Home = () => {
           <div className="flex justify-center">
             <a
               href="mailto:info@elgosoft.com?subject=İletişim%20Talebi&body=Merhaba,%20size%20ulaşmak%20istiyorum."
-              className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 hover:cursor-pointer">
+              className="bg-blue-600 rounded-xl text-white pr-10  pl-10 pt-2 pb-2 hover:cursor-pointer"
+            >
               Bizimle İletişime Geçin
             </a>
           </div>
           <img
-            className="m-auto"
+            className="m-auto h-[600px]"
             src="/assets/home-header-img.svg"
             alt="icon"
           />
