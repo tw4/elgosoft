@@ -19,7 +19,11 @@ export const HomePageStepCard: FC<HomePageStepCardProps> = ({
       <h5 className="text-2xl font-bold text-blue-500  h-[130px]">
         {stepTitle}
       </h5>
-      <img className="m-auto h-[137px]" src={stepImageUrl} alt="icon" />
+      <img
+        className="m-auto h-[137px] rounded-full"
+        src={stepImageUrl}
+        alt="icon"
+      />
       <p>{stepDescription}</p>
     </div>
   );
