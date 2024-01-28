@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from "react";
 
 interface MainSectionLayoutProps {
   children?: React.ReactNode;
@@ -13,7 +13,7 @@ export const MainSectionLayout: FC<MainSectionLayoutProps> = ({
 }) => {
   return (
     <div className={className} id={id}>
-      <div className="pl-40 pr-40 pt-10 sm:pl-10 sm:pr-10">{children}</div>
+      <div className="pl-40 pr-40 pt-10 sm:pl-5 sm:pr-5">{children}</div>
     </div>
   );
 };

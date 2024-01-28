@@ -181,7 +181,7 @@ const Home = () => {
           <span className="text-blue-500">UI/UX</span> tasarımları işletmeleri
           nasıl <span className="text-blue-500"> zirveye </span> taşıyor?
         </h2>
-        <div className="mt-10 space-y-5 pb-32">
+        <div className="mt-10 pb-32">
           <div
             id="carouselExampleCaptions"
             className="relative"

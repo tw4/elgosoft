@@ -52,7 +52,7 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="hidden fixed bg-white bg-opacity-50 backdrop-blur-2xl w-full cursor-pointer sm:block">
+      <div className="hidden fixed bg-white bg-opacity-50 backdrop-blur-2xl w-full cursor-pointer sm:block z-[9999]">
         <div
           onClick={handleNavbar}
           className="flex flex-row justify-between p-5"
