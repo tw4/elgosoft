@@ -1,9 +1,27 @@
+"use client";
+
 import { MainSectionLayout } from "@/app/layouts/MainSectionLayout";
 import { Navbar } from "@/app/components/Navbar";
 import { FaqCard } from "@/app/components/FaqCard";
 import { HomePageStepCard } from "@/app/components/HomePageStepCard";
+import React, { useState } from "react";
 
 const Home = () => {
+  const bannerList = [
+    "/assets/banner-01.svg",
+    "/assets/banner-02.svg",
+    "/assets/banner-03.svg",
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? 2 : prevSlide - 1));
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 2 ? 0 : prevSlide + 1));
+  };
   return (
     <main>
       <Navbar />
@@ -164,9 +182,106 @@ const Home = () => {
           nasıl <span className="text-blue-500"> zirveye </span> taşıyor?
         </h2>
         <div className="mt-10 space-y-5 pb-32">
-          <img className="m-auto" src="/assets/banner-01.svg" alt="banner" />
-          <img className="m-auto" src="/assets/banner-02.svg" alt="banner" />
-          <img className="m-auto" src="/assets/banner-03.svg" alt="banner" />
+          <div
+            id="carouselExampleCaptions"
+            className="relative"
+            data-te-carousel-init
+            data-te-ride="carousel"
+          >
+            {/* Carousel indicators */}
+            <div
+              className="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+              data-te-carousel-indicators
+            >
+              {[0, 1, 2].map((index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => setCurrentSlide(index)}
+                  className={`mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] ${
+                    currentSlide === index ? "opacity-100" : "opacity-50"
+                  } transition-opacity duration-600 ease-cubic-bezier(0.25,0.1,0.25,1.0) motion-reduce:transition-none`}
+                  aria-current={currentSlide === index}
+                  aria-label={`Slide ${index + 1}`}
+                ></button>
+              ))}
+            </div>
+
+            {/* Carousel items */}
+            <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+              {bannerList.map((data, index) => (
+                <div
+                  key={index}
+                  className={`relative float-left ${
+                    currentSlide === index ? "" : "-mr-[100%] hidden"
+                  } w-full transition-transform duration-600 ease-in-out motion-reduce:transition-none`}
+                  data-te-carousel-active
+                  data-te-carousel-item
+                  style={{ backfaceVisibility: "hidden" }}
+                >
+                  <img
+                    src={data}
+                    className="block w-full"
+                    alt={`Slide ${index + 1}`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Carousel controls - prev item */}
+            <button
+              className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-cubic-bezier(0.25,0.1,0.25,1.0) hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              onClick={handlePrevSlide}
+            >
+              <span className="inline-block h-8 w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="h-6 w-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </span>
+              <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+                Previous
+              </span>
+            </button>
+
+            {/* Carousel controls - next item */}
+            <button
+              className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-cubic-bezier(0.25,0.1,0.25,1.0) hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              onClick={handleNextSlide}
+            >
+              <span className="inline-block h-8 w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="h-6 w-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </span>
+              <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+                Next
+              </span>
+            </button>
+          </div>
         </div>
         {/* TODO: This area will be activated in the future */}
         {/*<div className="mt-20">*/}

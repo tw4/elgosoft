@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="fixed flex flex-row justify-center w-full">
+      <div className="fixed flex flex-row justify-center w-full z-[9999]">
         <nav className="w-fit flex flex-row rounded-2xl space-x-5 bg-opacity-50 items-center bg-white backdrop-blur-2xl mt-10 pt-3 pb-3 pr-10 pl-10 md:pr-10 md:pl-10 sm:hidden">
           <a href="#howitworks">
             <img className="w-24" src="/assets/logo.png" alt="logo" />
@@ -37,7 +37,8 @@ export const Navbar = () => {
             <li>
               <a
                 className="hover:text-blue-500"
-                href="https://blog.elgosoft.com/">
+                href="https://blog.elgosoft.com/"
+              >
                 Blog
               </a>
             </li>
@@ -54,7 +55,8 @@ export const Navbar = () => {
       <div className="hidden fixed bg-white bg-opacity-50 backdrop-blur-2xl w-full cursor-pointer sm:block">
         <div
           onClick={handleNavbar}
-          className="flex flex-row justify-between p-5">
+          className="flex flex-row justify-between p-5"
+        >
           <a href="#howitworks">
             <img className="w-24" src="/assets/logo.png" alt="logo" />
           </a>
@@ -85,7 +87,8 @@ export const Navbar = () => {
               <li>
                 <a
                   className="hover:text-blue-500"
-                  href="https://blog.elgosoft.com/">
+                  href="https://blog.elgosoft.com/"
+                >
                   Blog
                 </a>
               </li>
