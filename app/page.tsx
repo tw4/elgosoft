@@ -13,6 +13,12 @@ const Home = () => {
     "/assets/banner-03.svg",
   ];
 
+  const bannerMobileList = [
+    "https://wallpapers.com/images/featured/4k-hd-mobile-5en8ogod15qw40aj.jpg",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3a1ed2a7-6aef-418e-bf1d-45599c2b6f62/dfz5iyx-0dd535fd-8aa0-49d3-b2bc-20380141f792.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNhMWVkMmE3LTZhZWYtNDE4ZS1iZjFkLTQ1NTk5YzJiNmY2MlwvZGZ6NWl5eC0wZGQ1MzVmZC04YWEwLTQ5ZDMtYjJiYy0yMDM4MDE0MWY3OTIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FI5ZvYcrzZdcaks_zNSkmzrJdVvs9Q1eosw-rO6VWxo",
+    "https://w.forfun.com/fetch/21/215e3ddf9d2d722a16e435992d354932.jpeg",
+  ];
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrevSlide = () => {
@@ -181,7 +187,7 @@ const Home = () => {
           <span className="text-blue-500">UI/UX</span> tasarımları işletmeleri
           nasıl <span className="text-blue-500"> zirveye </span> taşıyor?
         </h2>
-        <div className="mt-10 pb-32">
+        <div className="mt-10 space-y-5 pb-32">
           <div
             id="carouselExampleCaptions"
             className="relative"
@@ -208,8 +214,29 @@ const Home = () => {
             </div>
 
             {/* Carousel items */}
-            <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+            <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] sm:hidden">
               {bannerList.map((data, index) => (
+                <div
+                  key={index}
+                  className={`relative float-left ${
+                    currentSlide === index ? "" : "-mr-[100%] hidden"
+                  } w-full transition-transform duration-600 ease-in-out motion-reduce:transition-none`}
+                  data-te-carousel-active
+                  data-te-carousel-item
+                  style={{ backfaceVisibility: "hidden" }}
+                >
+                  <img
+                    src={data}
+                    className="block w-full"
+                    alt={`Slide ${index + 1}`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Carousel mobile items */}
+            <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] hidden sm:block">
+              {bannerMobileList.map((data, index) => (
                 <div
                   key={index}
                   className={`relative float-left ${
